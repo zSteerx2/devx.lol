@@ -1,0 +1,68 @@
+<!-- Website template by https://github.com/Pathetic420 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev x</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="specimen_stylesheet.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="other/black.ico">
+  </head>
+  <body>
+    <div id="click-to-enter" class="click-to-enter"> [click anywhere] </div>
+    <div class="background" style="display: none;">
+      <video id="background" autoplay loop muted>
+        <source src="other/video.mp4" type="video/mp4"> Your browser does not support the video tag.
+      </video>
+      <audio src="other/music.mp3" type="audio/mp3"> Your browser does not support the audio tag. </audio>
+      <div class="overlay"></div>
+      <button class="mute-button" id="mute-button">
+        <svg id="mute-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.9514 9.55359L16.0486 14.4564" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+          <path d="M16.0486 9.55359L20.9514 14.4564" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+          <path d="M3.04858 14.0881V9.91184C3.04858 9.49649 3.19082 9.09814 3.44399 8.80445C3.69717 8.51075 4.04055 8.34575 4.3986 8.34575H6.28863C6.52536 8.34461 6.75785 8.2727 6.96364 8.13694L10.9328 5.5059C11.1378 5.37099 11.3696 5.30072 11.6055 5.30208C11.8412 5.30343 12.0725 5.37638 12.2763 5.51364C12.4803 5.65091 12.6496 5.84771 12.7675 6.08448C12.8856 6.32125 12.9479 6.58972 12.9488 6.86318V17.1368C12.9479 17.4102 12.8856 17.6787 12.7675 17.9154C12.6496 18.1522 12.4803 18.3491 12.2763 18.4863C12.0725 18.6235 11.8412 18.6965 11.6055 18.6979C11.3696 18.6992 11.1378 18.629 10.9328 18.494L6.96364 15.863C6.75785 15.7272 6.52536 15.6553 6.28863 15.6542H4.3986C4.04055 15.6542 3.69717 15.4891 3.44399 15.1955C3.19082 14.9018 3.04858 14.5035 3.04858 14.0881Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <svg id="unmute-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 14.0881V9.91184C3 9.49649 3.14223 9.09814 3.39541 8.80445C3.64858 8.51075 3.99197 8.34575 4.35002 8.34575H6.24005C6.47678 8.34461 6.70927 8.2727 6.91506 8.13694L10.8842 5.5059C11.0892 5.37099 11.3211 5.30072 11.5569 5.30208C11.7926 5.30343 12.0239 5.37638 12.2278 5.51364C12.4317 5.65091 12.601 5.84771 12.719 6.08448C12.837 6.32125 12.8994 6.58972 12.9002 6.86318V17.1368C12.8994 17.4102 12.837 17.6787 12.719 17.9154C12.601 18.1522 12.4317 18.3491 12.2278 18.4863C12.0239 18.6235 11.7926 18.6965 11.5569 18.6979C11.3211 18.6992 11.0892 18.629 10.8842 18.494L6.91506 15.863C6.70927 15.7272 6.47678 15.6553 6.24005 15.6542H4.35002C3.99197 15.6542 3.64858 15.4891 3.39541 15.1955C3.14223 14.9018 3 14.5035 3 14.0881Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M16.2278 15.7145C17.2301 14.7122 17.7933 13.3528 17.7932 11.9353C17.7933 10.5178 17.2301 9.15836 16.2278 8.15601" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+          <path d="M18.4954 18.0409C20.099 16.4371 21 14.2621 21 11.9941C21 9.72604 20.099 7.55094 18.4954 5.94727" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+        </svg>
+      </button>
+      <div class="rectangle">
+        <div class="horizontal-oval">
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" class="size-4" style="color:#ffffff;filter:drop-shadow(0 0 0.35rem #ffffff)" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+            <span>2400</span>
+          </svg>
+        </div>
+        <div class="profile-picture-wrapper">
+          <img src="other/pfp.jpg" alt="Profile Picture" class="profile-picture">
+        </div>
+        <div class="wide-text above-text"> pathetic </div>
+        <div class="middle-oval">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="h-5 w-5 iconify iconify--mage" width="1em" height="1em" viewBox="0 0 24 24" style="color: rgb(255, 255, 255);">
+            <path fill="currentColor" d="m9.367 19.08l-7.025-9.04h3.836zm5.987-9.04l-3.36 10.946L8.12 10.039zm6.28 0l-7.209 9.272l2.859-9.273zM22 8.206h-4.704l-1.43-5.192h2.652a.4.4 0 0 1 .257.183zm-6.597 0h-7.27l1.833-5.18h3.995zM8.011 3.039l-1.82 5.167H2L5.128 3.32l.097-.11a.5.5 0 0 1 .16-.123a.4.4 0 0 1 .17 0z"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="h-5 w-5 iconify iconify--solar" width="1em" height="1em" viewBox="0 0 24 24" style="color: rgb(255, 255, 255);">
+            <path fill="currentColor" d="M9.592 3.2a6 6 0 0 1-.495.399c-.298.2-.633.338-.985.408c-.153.03-.313.043-.632.068c-.801.064-1.202.096-1.536.214a2.71 2.71 0 0 0-1.655 1.655c-.118.334-.15.735-.214 1.536a6 6 0 0 1-.068.632c-.07.352-.208.687-.408.985c-.087.13-.191.252-.399.495c-.521.612-.782.918-.935 1.238c-.353.74-.353 1.6 0 2.34c.153.32.414.626.935 1.238c.208.243.312.365.399.495c.2.298.338.633.408.985c.03.153.043.313.068.632c.064.801.096 1.202.214 1.536a2.71 2.71 0 0 0 1.655 1.655c.334.118.735.15 1.536.214c.319.025.479.038.632.068c.352.07.687.209.985.408c.13.087.252.191.495.399c.612.521.918.782 1.238.935c.74.353 1.6.353 2.34 0c.32-.153.626-.414 1.238-.935c.243-.208.365-.312.495-.399c.298-.2.633-.338.985-.408c.153-.03.313-.043.632-.068c.801-.064 1.202-.096 1.536-.214a2.71 2.71 0 0 0 1.655-1.655c.118-.334.15-.735.214-1.536c.025-.319.038-.479.068-.632c.07-.352.209-.687.408-.985c.087-.13.191-.252.399-.495c.521-.612.782-.918.935-1.238c.353-.74.353-1.6 0-2.34c-.153-.32-.414-.626-.935-1.238a6 6 0 0 1-.399-.495a2.7 2.7 0 0 1-.408-.985a6 6 0 0 1-.068-.632c-.064-.801-.096-1.202-.214-1.536a2.71 2.71 0 0 0-1.655-1.655c-.334-.118-.735-.15-1.536-.214a6 6 0 0 1-.632-.068a2.7 2.7 0 0 1-.985-.408a6 6 0 0 1-.495-.399c-.612-.521-.918-.782-1.238-.935a2.71 2.71 0 0 0-2.34 0c-.32.153-.626.414-1.238.935" opacity=".5"></path>
+            <path fill="currentColor" d="M16.374 9.863a.814.814 0 0 0-1.151-1.151l-4.85 4.85l-1.595-1.595a.814.814 0 0 0-1.151 1.151l2.17 2.17a.814.814 0 0 0 1.15 0z"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="h-5 w-5 iconify iconify--material-symbols" width="1em" height="1em" viewBox="0 0 24 24" style="color: rgb(255, 255, 255);">
+            <path fill="currentColor" d="m2.45 10.575l4.2-4.2q.35-.35.825-.5t.975-.05l1.3.275Q8.4 7.7 7.625 9t-1.5 3.15zm5.125 2.275q.575-1.8 1.563-3.4t2.387-3q2.2-2.2 5.025-3.287t5.275-.663q.425 2.45-.65 5.275T17.9 12.8q-1.375 1.375-3 2.388t-3.425 1.587zm6.9-3q.575.575 1.413.575T17.3 9.85t.575-1.412t-.575-1.413t-1.412-.575t-1.413.575t-.575 1.413t.575 1.412m-.7 12.025l-1.6-3.675q1.85-.725 3.163-1.5t2.912-2.125l.25 1.3q.1.5-.05.988t-.5.837zM4.05 16.05q.875-.875 2.125-.888t2.125.863t.875 2.125t-.875 2.125q-.625.625-2.087 1.075t-4.038.8q.35-2.575.8-4.025T4.05 16.05"></path>
+          </svg>
+        </div>
+        <div class="wide-text below-text">JavaScript Developer</div>
+        <footer>
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </footer>
+  </body>
+</html>
